@@ -8,14 +8,16 @@ function App() {
     getMessage()
       .then((response) => {
         setData(response.data.message);
-        console.log(response.data.message); // Move this inside the `then` block
+        console.log(response.data.message); // Optionally, you can log the message here
       })
-      .catch((error) => console.error("Error:", error));
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }, []);
 
   return (
     <div>
-      <h1>Data from server:</h1>
+      <h1>Message:</h1>
       <p>{data}</p>
     </div>
   );
