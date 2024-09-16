@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/message", (req, res) => {
-  res.json({ message: "Server is running on port 3000!" });
+  res.json({ message: "Server is running on port 3000" });
 });
 
 // Error handling middleware
