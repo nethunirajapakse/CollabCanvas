@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A backend server built with Node.js for CollabCanvas",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
@@ -11,7 +12,11 @@
   "author": "Nethuni Rajapakse",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.2",
     "socket.io": "^4.7.5"
   }
 }

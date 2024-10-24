@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { getMessage } from "./services/canvas";
 
+import "./index.css";
+import "./App.css";
+import RoomPage from "./pages/RoomPage";
+import Canvas from "./components/Canvas";
+
 function App() {
   const [data, setData] = useState(null);
 
@@ -17,8 +22,13 @@ function App() {
 
   return (
     <div>
-      <h1>Message:</h1>
+      <h1 className="text-3xl font-bold  text-stone-500">Message:</h1>
       <h1>{data}</h1>
+      <div>
+        {" "}
+        <RoomPage />
+        <Canvas />
+      </div>
     </div>
   );
 }
